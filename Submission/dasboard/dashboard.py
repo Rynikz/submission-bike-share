@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 #----------------------------------------------------------
-day_df = pd.read_csv("main_data.csv") 
+day_df = pd.read_csv("/mount/src/submission-bike-share/Submission/dasboard/main_data.csv") 
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
 min_date = day_df["dteday"].min()
 max_date = day_df["dteday"].max()
